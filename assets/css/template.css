@@ -1,0 +1,389 @@
+/**
+ * Updated at: 6/11/18 1:51pm
+ */
+.pop-up-window {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.content {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    right: 0;
+    top: 0;
+    z-index: 1010;
+    min-width: 320px;
+}
+
+.class-type{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: -1;
+
+}
+
+.seperator{
+    padding-bottom: 10px;
+}
+.description{
+    border-color: #CECECE;
+    padding: 15px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.class-list{
+    padding-left: 5%;
+}
+
+.grid-height{
+    height: auto;
+}
+
+.grid-width{
+    width: 100%;
+}
+
+.col{
+    width:100%;
+
+}
+
+.grid-col{
+    height: auto;
+}
+
+/*CSS for Grid */
+.grid-sm-1{
+    width: 100%;
+    float:left;
+}
+
+.grid-sm-2{
+    width: 50%;
+    float: left;
+}
+.grid-sm-3{
+    width: 33.33%;
+    float: left;
+}
+.grid-sm-4{
+    width: 50%;
+    float:left;
+}
+.grid-border {
+    background: none;
+    border-color: #CECECE;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-animation{
+    background: linear-gradient(to left, white 50%, #DD3326 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+
+}
+
+.animation-active{
+    transition: all 0.35s ease-in;
+    color: white;
+    background-position: left bottom;
+}
+
+div.grid-padding div.grid-border{
+    cursor: pointer;
+}
+/*Grid Padding*/
+.grid-padding{
+    background: none;
+    padding: 15px 10px 15px 10px;
+    height: 100%;
+}
+.grid-content{
+    display: inline-block;
+    padding: 15px 20px 15px 20px;
+    width: 100%;
+}
+
+/*popup window background when active*/
+.pop-up-window{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.pop-up-shadow{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: inline-block;
+}
+
+/*!*pop up window *!*/
+.pop-up{
+    background-color: #fefefe;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    max-height: 600px;
+    position: relative;
+
+}
+/*pop up contents*/
+.pop-up-contents{
+    margin-top: -2px;
+    margin-right: -2px;
+    padding:  0px 8px;
+    text-align: center;
+    background-color: #DD3326;
+    color: white;
+}
+
+.edit-grid-width{
+    width: 25%;
+    display: inline-block;
+    float: left;
+}
+
+.edit-grid-sm-1{
+
+}
+.edit-grid-sm-2{
+
+}
+
+.edit-grid-height{
+    height: auto;
+}
+
+.edit-pop-up-window{
+
+    width: 75%;
+
+    float: right;
+    padding: 15px 10px 15px 10px;
+}
+.edit-pop-up{
+    display: inline-block;
+    background: none;
+    border-color: #CECECE;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.edit-close-pop-up{
+    display:none;
+}
+
+.edit-close-button{
+    display: none;
+}
+
+.edit-border{
+    background: none;
+    border-color: dimgray;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.learn-border{
+    font-style: italic;
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.edit-grid-sm-3{
+
+
+}
+.grid-padding{
+    outline: none;
+}
+
+.grid-content{
+    outline: none;
+}
+.grid-height{
+    outline: none;
+}
+.close-pop-up{
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align:center;
+    line-height: 30px;
+}
+
+.close-pop-up:hover{
+    color: black;
+}
+
+.overcast{
+    opacity: 0.62;
+}
+.close-button{
+    width: 80px;
+    height: auto;
+
+    padding: 10px 20px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    background-color: #DD3326;
+    color: white;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    margin-left: calc(100% - 95px);
+}
+
+.close-button:hover{
+    background-color: #ff6a51;
+    color: white;
+}
+
+.grid-row{
+    width: 100%;
+    display: inline-block;
+}
+
+.click-learn{
+    display: block;
+    color: white;
+    text-align: right;
+    position:relative;
+    margin-right: 10px;
+    background: linear-gradient(to left, white 50%, #DE2E07 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    pointer-events:none;
+}
+.edit-extra-content{
+    background: none;
+    border-color: dimgray;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    height: 100%;
+}
+.extra-content{
+    background: none;
+    border-color: #CECECE;
+    border-style: solid;
+    border-width: 2px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.extra-content-padding{
+    padding: 15px 20px 15px 20px;
+}
+.contents{
+    overflow-y: auto;
+    padding: 15px 8px;
+    background: white;
+
+}
+.contents p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.pop-up-title{
+    color: white;
+    padding: 15px 8px;
+    text-align: left;
+    margin-bottom: 0;
+
+}
+
+.matching{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+}
+matching:focus{
+    outline: none;
+}
+
+.class-info-temp{
+    background: none;
+    color: black;
+    content: "";
+    display: block;
+    padding:15px;
+}
+.class-info-temp:after{
+    background: none;
+    content: "";
+    display: block;
+    height: 5px;
+    margin: 20px -15px -5px -15px;
+}
+
+.paragraphs{
+
+    overflow-y: auto;
+}
+
+.paragraphs::-webkit-scrollbar{
+    width: 5px;
+}
+
+.paragraphs::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 30px;
+    padding-top: 2px;
+}
+
+.paragraphs::-webkit-scrollbar-thumb{
+    background: rgb(255, 106, 57);
+    border-radius: 10px;
+}
+
+.class-content-container{
+    display:inline-block;
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+}
